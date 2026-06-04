@@ -9,7 +9,7 @@ namespace NewsWPF.Models
         public string Login { get; private set; }
         public string Password{ get; private set; }
 
-        Users (string login, string password)
+        public Users (string login, string password)
         {
             Login = login;
             Password = password;

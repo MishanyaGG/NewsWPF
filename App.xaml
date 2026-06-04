@@ -4,29 +4,40 @@
              xmlns:local="clr-namespace:NewsWPF"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <!-- Стандартный дизайн для кнопок-->
+        <Style x:Key="BasedBtn" TargetType="Button">
+            <Setter Property="Margin" Value="20,10"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+
         <!-- Зеленая кнопка -->
-        <Style x:Key="GreenBtn" TargetType="Button">
+        <Style x:Key="GreenBtn" TargetType="Button" BasedOn="{StaticResource BasedBtn}">
             <Setter Property="Background" Value="Green"/>
             <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="24"/>
+        </Style>
+
+        <!-- Синяя кнопка -->
+        <Style x:Key="BlueBtn" TargetType="Button" BasedOn="{StaticResource BasedBtn}">
+            <Setter Property="Background" Value="Blue"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+
+        <!-- Красная кнопка -->
+        <Style x:Key="RedBtn" TargetType="Button" BasedOn="{StaticResource BasedBtn}">
+            <Setter Property="Background" Value="Red"/>
+            <Setter Property="Foreground" Value="White"/>
         </Style>
 
         <!-- Стандартный дизайн текста -->
         <Style TargetType="TextBlock">
             <Setter Property="FontSize" Value="20"/>
-            <Setter Property="Margin" Value="0,10,0,0"/>
         </Style>
 
         <!-- Стандартный дизайн для полей ввода текста -->
         <Style TargetType="TextBox">
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="Margin" Value="0,10,0,0"/>
-        </Style>
-
-        <!-- Стандартный дизайн для кнопок-->
-        <Style TargetType="Button">
-            <Setter Property="Margin" Value="20,10"/>
-            <Setter Property="Width" Value="100"/>
         </Style>
     </Application.Resources>
 </Application>

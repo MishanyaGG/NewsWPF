@@ -8,13 +8,13 @@
         Title="Авторизация" Height="500" Width="450">
     <StackPanel VerticalAlignment="Center" Margin="10">
         <TextBlock Text="Логин"/>
-        <TextBox />
+        <TextBox x:Name="login" />
         <TextBlock Text="Пароль"/>
-        <TextBox />
+        <TextBox x:Name="password"/>
 
         <StackPanel Margin="20" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Content="Войти"/>
-            <Button Content="Выйти"/>
+            <Button Style="{StaticResource BlueBtn}" Content="Войти" Click="Login_BtnClick"/>
+            <Button Style="{StaticResource RedBtn}" Content="Выйти" Click="Exit_BtnClick"/>
         </StackPanel>
     </StackPanel>
 </Window>
