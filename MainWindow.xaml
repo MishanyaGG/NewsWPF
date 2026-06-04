@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NewsWPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Авторизация" Height="500" Width="450">
+    <StackPanel VerticalAlignment="Center" Margin="10">
+        <TextBlock Text="Логин"/>
+        <TextBox />
+        <TextBlock Text="Пароль"/>
+        <TextBox />
 
-    </Grid>
+        <StackPanel Margin="20" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Войти"/>
+            <Button Content="Выйти"/>
+        </StackPanel>
+    </StackPanel>
 </Window>
