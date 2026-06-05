@@ -109,7 +109,6 @@ namespace NewsWPF.Models
                 MessageBox.Show("Ошибка при увеличении числа новостей определенной категории");
                 return false;
             }
-
         }
     }
 }
